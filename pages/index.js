@@ -1,22 +1,9 @@
-import { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import { parseMarkdown } from '../lib/markdown';
 
-export default function Home({ interests_data, skills_data }) {
-  const [activeResume, setActiveResume] = useState(false);
-
-  console.log(activeResume)
-
-  function onClickResume() {
-    setActiveResume(!activeResume)
-    console.log(activeResume)
-  }
-
-  // let onClickResume = () => setActiveResume(!activeResume);
-
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -38,28 +25,10 @@ export default function Home({ interests_data, skills_data }) {
           <Link href="/posts/hockey/hockey"><a className={styles.card}>hockey</a></Link>
         </div>
 
-        {/* <button className={styles.resume} onClick={onClickResume}>Resume</button> */}
         <a href="https://www.linkedin.com/in/louis-émile-robitaille-7b702689/" className={styles.resume}>Resume</a>
-        
-        {activeResume && <div>
-          <div className={styles.interests} dangerouslySetInnerHTML={{ __html: interests_data.contentHtml }}/>
-          <div className={styles.skills} dangerouslySetInnerHTML={{ __html: skills_data.contentHtml }}/>
-        </div>}
 
       </main>
 
     </div>
   )
-}
-
-// This function gets called at build time
-export async function getStaticProps() {
-  const interests_data = await parseMarkdown("interests")
-  const skills_data = await parseMarkdown("skills")
-  return {
-    props: {
-      interests_data,
-      skills_data,
-    },
-  }
 }
