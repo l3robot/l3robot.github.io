@@ -18,12 +18,12 @@ export default function Home() {
 
         <p>Applied Scientist in Data Science @ <a href="https://www.coveo.com/en" className={styles.coveo}>COVEO</a></p>
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <Link href="/posts/stats/stats"><a className={styles.card}>stats</a></Link>
           <Link href="/posts/finance/finance"><a className={styles.card}>finance</a></Link>
           <Link href="/posts/hockey/design"><a className={styles.card}>design</a></Link>
           <Link href="/posts/hockey/hockey"><a className={styles.card}>hockey</a></Link>
-        </div>
+        </div> */}
 
         <a href="https://www.linkedin.com/in/louis-émile-robitaille-7b702689/" className={styles.resume}>Resume</a>
 
