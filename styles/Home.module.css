@@ -1,6 +1,28 @@
 .container {
+  display: flex;
+  flex-direction: row;
   padding: 0 2rem;
-  /* border: solid red; */
+  justify-content: center; /* Center the sections */
+}
+
+.sidebar {
+  width: 25%; /* Widen the sidebar section */
+  padding: 2rem;
+  background-color: transparent; /* Changed from #f7f7f7 */
+  border-right: 1px solid #eaeaea;
+  text-align: center; /* Center the content in the sidebar */
+}
+
+.content {
+  width: 35%; /* Adjust width to make sections tighter */
+  padding: 2rem;
+}
+
+.blog {
+  width: 15%; /* Adjust width to make sections tighter */
+  padding: 2rem;
+  background-color: transparent; /* Changed from #f7f7f7 */
+  border-left: 1px solid #eaeaea;
 }
 
 .main {
@@ -16,12 +38,14 @@
 
 .profile {
   border-radius: 9999px;
+  margin-bottom: 1rem;
 }
 
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .coveo:hover,
@@ -62,20 +86,17 @@
 }
 
 .resume {
-  /* width: 100%; */
-  /* border: solid 1px blue; */
   color: #eaeaea;
   border: none;
   border-bottom: solid #FF4136;
   margin-top: 1rem;
-  text-align: left;
+  text-align: center;
   background-color: inherit;
   font-size: 1rem;
   padding: 0rem 0.5rem;
 }
 
 .resume:hover {
-  /* width: 100%; */
   color: #778899;
   border-bottom: solid #FF4136;
   cursor: pointer;
@@ -91,5 +112,5 @@
 }
 
 .skills {
-  text-align: right;
+  text-align: left;
 }

@@ -5,10 +5,36 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <Layout>
-      <Image className={styles.profile} src="/images/me.jpg" alt="me" width={200} height={200} />
-      <h1 className={styles.title}>Émile Robitaille</h1>
-      <p>Applied Scientist in Data Science @ <a href="https://www.coveo.com/en" className={styles.coveo}>COVEO</a></p>
-      <a href="https://www.linkedin.com/in/louis-émile-robitaille-7b702689/" className={styles.resume}>Resume</a>
+      <div className={styles.container}>
+        <div className={styles.sidebar}>
+          <Image className={styles.profile} src="/images/me.jpg" alt="me" width={200} height={200} />
+          <h1 className={styles.title}>Émile Robitaille</h1>
+          <p>Applied Scientist @ <a href="https://www.coveo.com/en" className={styles.coveo}>COVEO</a></p>
+          <a href="https://www.linkedin.com/in/louis-émile-robitaille-7b702689/" className={styles.resume}>LinkedIn</a>
+        </div>
+        <div className={styles.content}>
+          <h2>About Me</h2>
+          <p>I’m currently an Applied Scientist at Coveo, working in the Research and Development team.</p>
+          <p>My passion lies in machine learning, especially its applications in decision support. I believe design is a key element in effectively conveying information.</p>
+          <p>Also, a big fan of hockey and running!</p>
+          <h2>Skills</h2>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>LLM applications</li>
+            <li>Software Development</li>
+          </ul>
+        </div>
+        <div className={styles.blog}>
+          <h2>Blog</h2>
+          <ul>
+            <li><a href="/blog/data-science">Data Science</a></li>
+            <li><a href="/blog/machine-learning">Machine Learning</a></li>
+            <li><a href="/blog/software-development">Software Development</a></li>
+            <li><a href="/blog/project-management">Project Management</a></li>
+          </ul>
+        </div>
+      </div>
     </Layout>
   );
 }
