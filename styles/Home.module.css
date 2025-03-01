@@ -140,3 +140,34 @@
 .skills {
   text-align: left;
 }
+
+.sectionTitle {
+  position: relative;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  color: inherit;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 4px;
+  width: 60%;
+  background: linear-gradient(90deg, #778899, transparent);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.sectionTitle:hover {
+  cursor: default;
+}
+
+.sectionTitle:hover::after {
+  width: 100%;
+}
