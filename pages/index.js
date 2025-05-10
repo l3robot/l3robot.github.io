@@ -15,7 +15,7 @@ export default function Home() {
         <div className={styles.contentWrapper}>
           <div className={styles.content}>
             <h2 className={styles.sectionTitle}>About Me</h2>
-            <p>I’m currently an <span className={styles.highlight}>Applied Scientist</span> at Coveo, working in the Research and Development team.</p>
+            <p>I’m currently an <span className={styles.highlight}>Senior Applied Scientist</span> at Coveo, working in the Research and Development team.</p>
             <p>My passion lies in <span className={styles.highlight}>machine learning</span>, especially its applications in decision support. I believe <span className={styles.highlight}>design</span> is a key element in effectively conveying information.</p>
             <p>Also, a big fan of <span className={styles.highlight}>hockey</span> and <span className={styles.highlight}>running</span> !</p>
           </div>
