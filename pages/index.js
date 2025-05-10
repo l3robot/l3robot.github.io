@@ -9,7 +9,7 @@ export default function Home() {
         <div className={styles.sidebar}>
           <Image className={styles.profile} src="/images/me.jpg" alt="me" width={200} height={200} />
           <h1 className={styles.title}>Émile Robitaille</h1>
-          <p>Applied Scientist @ <a href="https://www.coveo.com/en" className={styles.coveo}>COVEO</a></p>
+          <p>Senior Applied Scientist @ <a href="https://www.coveo.com/en" className={styles.coveo}>COVEO</a></p>
           <a href="https://www.linkedin.com/in/louis-émile-robitaille-7b702689/" className={styles.resume}>LinkedIn</a>
         </div>
         <div className={styles.contentWrapper}>
